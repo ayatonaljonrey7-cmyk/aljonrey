@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Student web portfolio — WEB1 Lab 4" />
+    <title>My Portfolio | Lab 4</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">ayaton<span>.dev</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#projects" class="nav-link">My Projects</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#contact" class="nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="PROJECTS/4c6d3e1d-450f-4fde-9bca-1730ddb49b59.jpg" alt="Aljon Rey Ayaton Profile">
+            </div>
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="hero-name">Aljon Rey Ayaton</h1>
+                <h2 class="hero-role">BS COMPUTER SCIENCE STUDENT</h2>
+                <p class="hero-bio">Welcome to my portfolio. I'm Aljon Rey, studying at NORTHEAST MINDANAO STATE
+                    UNIVERSITY-LIANGA CAMPUS and aspiring to become a Graphic Designer.</p>
+                <a href="#projects" class="btn-primary">View My Projects</a>
+            </div>
+        </div>
+
+        <div class="hero-project-nav">
+            <div class="project-selector">
+                <!-- Selection Slot Header -->
+                <div class="selector-content">
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="section-subtitle">A collection of my school projects.</p>
+                </div>
+                <div class="selector-grid">
+                    <a href="#project-1" class="folder-item active" title="Model Project">
+                        <div class="folder-icon">
+                            <img src="PROJECTS/1000030780.jpg" alt="Model Project">
+                        </div>
+                        <span class="folder-name">DIORAMA</span>
+                    </a>
+                    <a href="#project-2" class="folder-item" title="HTML Formatting Exercises">
+                        <div class="folder-icon">
+                            <img src="PROJECTS/image.png" alt="HTML Lab Exercise">
+                        </div>
+                        <span class="folder-name">HTML TEXT FORMATTING</span>
+                    </a>
+                    <a href="#project-3" class="folder-item" title="Photoshop Activities">
+                        <div class="folder-icon">
+                            <img src="PROJECTS/Screenshot 2026-03-06 210954.png" alt="Adobe Photoshop Activities">
+                        </div>
+                        <span class="folder-name">PHOTOSHOP EDIT/DESIGN</span>
+                    </a>
+                    <a href="#project-4" class="folder-item" title="Robot Car">
+                        <div class="folder-icon">
+                            <img src="PROJECTS/Screenshot 2026-02-09 110928.png" alt="Robot Car">
+                        </div>
+                        <span class="folder-name">FILMORA EDIT</span>
+                    </a>
+                    <a href="#project-5" class="folder-item" title="Anime Design">
+                        <div class="folder-icon">
+                            <img src="PROJECTS/1000062633.jpg" alt="">
+                        </div>
+                        <span class="folder-name">ROBOT CAR PROGRAM</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="projects" class="section">
+        <div class="section-container">
+            <!-- Project List Header -->
+        </div>
+        <div class="projects-list">
+
+            <!-- Project 01 -->
+            <div class="project-row reveal" id="project-1">
+                <div class="project-num-col">01</div>
+                <div class="project-main-col">
+                    <div class="project-row-tags">
+                        <span class="proj-tag">DIORAMA EVENT</span>
+                    </div>
+                    <h3 class="project-row-name">COLLEGE PROJECT MODEL</h3>
+                    <p class="project-row-desc">
+                        A detailed architectural model project representing a college facility or building complex,
+                        showcasing structural planning and creative design as part of a collaborative team effort.
+                    </p>
+                </div>
+                <div class="project-img-col">
+                    <div class="project-gallery">
+                        <div class="gallery-main" id="gallery-main-1">
+                            <img src="PROJECTS/1000030780.jpg" alt="Project Model Main">
+                        </div>
+                        <div class="gallery-grid">
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-1', 'PROJECTS/1000028880.jpg')">
+                                <img src="PROJECTS/1000028880.jpg" alt="Building Model">
+                            </div>
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-1', 'PROJECTS/1000029404.jpg')">
+                                <img src="PROJECTS/1000029404.jpg" alt="Team Member">
+                            </div>
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-1', 'PROJECTS/533c982a-6e60-44a8-9117-0246d7a0647bphoto.png.jpeg')">
+                                <img src="PROJECTS/533c982a-6e60-44a8-9117-0246d7a0647bphoto.png.jpeg"
+                                    alt="Team Member">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 02 -->
+            <div class="project-row reveal" id="project-2">
+                <div class="project-num-col">02</div>
+                <div class="project-main-col">
+                    <div class="project-row-tags">
+                        <span class="proj-tag">WEB1 PROJECTS</span>
+                    </div>
+                    <h3 class="project-row-name">HTML TEXT FORMATTING & BASIC TAGS</h3>
+                    <p class="project-row-desc">
+                        Implementation of various HTML text formatting tags, including bold, italics, subscripts, and
+                        semantic elements. Developed as part of a foundational web development laboratory exercise to
+                        master document structure and styling.
+                    </p>
+                </div>
+                <div class="project-img-col">
+                    <div class="project-gallery">
+                        <div class="gallery-main" id="gallery-main-2">
+                            <img src="PROJECTS/image.png" alt="HTML Formatting Main">
+                        </div>
+                        <div class="gallery-grid">
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-2', 'PROJECTS/Screenshot 2026-02-02 222748.png')">
+                                <img src="PROJECTS/Screenshot 2026-02-02 222748.png" alt="HTML Formatting 1">
+                            </div>
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-2', 'PROJECTS/image.png')">
+                                <img src="PROJECTS/image.png" alt="HTML Formatting 2">
+                            </div>
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-2', 'PROJECTS/Screenshot 2026-02-09 110818.png')">
+                                <img src="PROJECTS/Screenshot 2026-02-09 110818.png" alt="HTML Formatting 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 03 -->
+            <div class="project-row reveal delay-2" id="project-3">
+                <div class="project-num-col">03</div>
+                <div class="project-main-col">
+                    <div class="project-row-tags">
+                        <span class="proj-tag">EDIT AND DESIGN</span>
+                    </div>
+                    <h3 class="project-row-name">ADOBE PHOTOSHOP ACTIVITIES</h3>
+                    <p class="project-row-desc">
+                        A collection of my graphic design activities using Adobe Photoshop, featuring a concept
+                        poster
+                        for "ARC BACKPACK SHOP" and creative typography projects.
+                    </p>
+                </div>
+                <div class="project-img-col">
+                    <div class="project-gallery">
+                        <div class="gallery-main" id="gallery-main-3">
+                            <img src="PROJECTS/Screenshot 2026-03-06 210954.png" alt="ARC Backpack Shop Poster">
+                        </div>
+                        <div class="gallery-grid">
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-3', 'PROJECTS/Screenshot 2026-03-06 210632.png')">
+                                <img src="PROJECTS/Screenshot 2026-03-06 210632.png" alt="Typography Activity 1">
+                            </div>
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-3', 'PROJECTS/Screenshot 2026-03-06 210744.png')">
+                                <img src="PROJECTS/Screenshot 2026-03-06 210744.png" alt="Typography Activity 2">
+                            </div>
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-3', 'PROJECTS/Screenshot 2026-03-06 210813.png')">
+                                <img src="PROJECTS/Screenshot 2026-03-06 210813.png" alt="Photoshop Activity 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 04 -->
+            <div class="project-row reveal" id="project-4">
+                <div class="project-num-col">04</div>
+                <div class="project-main-col">
+                    <div class="project-row-tags">
+                        <span class="proj-tag">MULTIMEDIA</span>
+                    </div>
+                    <h3 class="project-row-name">FILMORA EDIT: TYPE OF SHOTS</h3>
+                    <p class="project-row-desc">
+                        An exploration of different camera angles and shot types in photography and videography.
+                        This project demonstrates the use of close-ups, wide shots, and various perspectives,
+                        carefully edited to tell a visual story.
+                    </p>
+                </div>
+                <div class="project-img-col">
+                    <div class="project-gallery">
+                        <div class="gallery-main" id="gallery-main-4">
+                            <div class="proj-img-wrap">
+                                <video class="project-vid" muted playsinline loop>
+                                    <source src="PROJECTS/42eb8a42-6ff4-4760-9061-dccce54777b7.mp4" type="video/mp4">
+                                </video>
+                                <img src="PROJECTS/1000062633.jpg" alt="Multimedia Project Main">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 05 -->
+            <div class="project-row reveal" id="project-5">
+                <div class="project-num-col">05</div>
+                <div class="project-main-col">
+                    <div class="project-row-tags">
+                        <span class="proj-tag">ROBOTICS</span>
+                    </div>
+                    <h3 class="project-row-name">ESP32-ROBOT CAR PROGRAM</h3>
+                    <p class="project-row-desc">
+                        The ESP32-CAM Robot Car is a low-cost wireless robotic vehicle that streams live video and
+                        allows remote control via Wi-Fi. It is ideal for surveillance, monitoring, and IoT
+                        experimentation.
+                    </p>
+                </div>
+                <div class="project-img-col">
+                    <div class="project-gallery">
+                        <div class="gallery-main" id="gallery-main-5">
+                            <div class="proj-img-wrap">
+                                <video class="project-vid" muted playsinline loop>
+                                    <source src="PROJECTS/4a419979-1ff4-4aec-b864-cd04988808b3.mp4" type="video/mp4">
+                                </video>
+                                <img src="PROJECTS/Screenshot 2026-02-09 110928.png" alt="Robot Car Project Main">
+                            </div>
+                        </div>
+                        <div class="gallery-grid">
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-5', 'PROJECTS/Screenshot 2026-03-07 202117.png')">
+                                <img src="PROJECTS/Screenshot 2026-03-07 202117.png" alt="Detail 1">
+                            </div>
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-5', 'PROJECTS/Screenshot 2026-03-07 202056.png')">
+                                <img src="PROJECTS/Screenshot 2026-03-07 202056.png" alt="Detail 2">
+                            </div>
+                            <div class="gallery-thumb"
+                                onclick="swapGalleryImage('gallery-main-5', 'PROJECTS/1000062633.jpg')">
+                                <img src="PROJECTS/1000062633.jpg" alt="Detail 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-avatar-wrap">
+                    <div class="about-avatar">
+                        <img src="PROJECTS/4c6d3e1d-450f-4fde-9bca-1730ddb49b59.jpg" alt="Aljon Rey Ayaton Profile">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hi, I'm Aljon!</h3>
+                    <p>I am a Second Year Computer Science student building a strong foundation in HTML,
+                        CSS, and JavaScript.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Course</span>
+                            <span class="detail-value">Web System 1</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">School</span>
+                            <span class="detail-value">NEMSU LC</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">purok-1,batucan,talacogon,agusan del sur</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Goal</span>
+                            <span class="detail-value">Front-end Developer</span>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h4>Skills</h4>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-label"><span>HTML</span><span>80%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="--pct:80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-label"><span>CSS</span><span>70%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="--pct:70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-label"><span>JavaScript</span><span>50%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="--pct:50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-container">
+            <h2 class="section-title">Contacts</h2>
+            <p class="section-subtitle">Feel free to reach out.</p>
+            <div class="contact-grid">
+                <a href="mailto:aljonreyayaton@gmail.com" class="contact-card">
+                    <div class="contact-icon">&#9993;</div>
+                    <div class="contact-info">
+                        <span class="contact-type">Gmail</span>
+                        <span class="contact-value">aljonreyayaton@gmail.com</span>
+                    </div>
+                </a>
+                <a href="tel:09126113879" class="contact-card">
+                    <div class="contact-icon">&#128222;</div>
+                    <div class="contact-info">
+                        <span class="contact-type">Phone</span>
+                        <span class="contact-value">091 261 13879</span>
+                    </div>
+                </a>
+                <a href="https://github.com/" class="contact-card" target="_blank" rel="noopener">
+                    <div class="contact-icon">&#128279;</div>
+                    <div class="contact-info">
+                        <span class="contact-type">GitHub</span>
+                        <span class="contact-value">https://github.com/ayatonaljonrey7-cmyk/aljonrey.git</span>
+                    </div>
+                </a>
+                <a href="https://facebook.com/" class="contact-card" target="_blank" rel="noopener">
+                    <div class="contact-icon">&#128100;</div>
+                    <div class="contact-info">
+                        <span class="contact-type">Facebook</span>
+                        <span class="contact-value">—</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Aljon Rey Ayaton &mdash; WEB1 Lab 4 &copy; 2026</p>
+        <a href="#home" class="back-to-top">&#8593; Back to Top</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
